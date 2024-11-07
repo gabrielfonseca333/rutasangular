@@ -1,0 +1,21 @@
+<div>
+  <h1>Tabla Multiplicar {{numero}}</h1>
+  <button (click)="mostrarTabla()" class="btn btn-primary">Mostrar tabla</button>
+
+  <div *ngIf="tabla.length > 1" class="col-6 mx-auto">
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>Operacion</th>
+          <th>Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tab of tabla, let i = index">
+          <td>{{tab.operacion}}</td>
+          <td>{{tab.resultado}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

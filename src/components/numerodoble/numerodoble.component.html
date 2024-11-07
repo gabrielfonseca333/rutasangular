@@ -1,0 +1,37 @@
+<div class="col-6 mx-auto" style="text-align: center;">
+  <h1>Numero Doble Parametros</h1>
+  <div *ngIf="numero">
+    <h2 class="text-dark-emphasis">
+      El doble de {{numero}} es {{doble}}
+    </h2>
+  </div>
+
+  <div *ngIf="!numero">
+    <p class=" bg-danger bg-gradient text-light col-6 mx-auto" >
+      *No hemos recibido parámetro
+    </p>
+  </div>
+
+  <button class="btn btn-primary" (click)="goToHome()" >Ir a Home 🏠</button><br>
+
+  <div class="col-1 mx-auto">
+    <table class="table table">
+      <thead>
+        <tr [ariaRowSpan]="2">
+          <td>numeros</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><button class="btn btn-outline-dark" (click)="redirect(3)" >3</button></td>
+          <td><button class="btn btn-outline-dark" (click)="redirect(101)" >101</button></td>
+        </tr>
+      </tbody>
+     
+    </table>
+  </div>
+ 
+
+  
+  
+</div>>
